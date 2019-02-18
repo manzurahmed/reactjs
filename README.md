@@ -7,4 +7,7 @@ sudo npm install -g create-react-app
 sudo create-react-app react-app
 ```
 
-দ্বিতীয় কমান্ডটির মাধ্যমে আমি react-app নামে একটি রিয়্যাক্ট এ্যাপ তৈরী 
+দ্বিতীয় কমান্ডটির মাধ্যমে আমি react-app নামে একটি রিয়্যাক্ট এ্যাপ তৈরী করেছি। এই এ্যাপটি চালু করতে হলে টার্মিনালে লিখতে হবেঃ
+```
+npm start
+```
