@@ -42,3 +42,25 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 3. Path Intellisense - Christian Kohler
 4. Prettier - Code formatter - Esben Petersen
 5. React-Native/React/Redux snippets for es6/es7 - EQuimper
+
+# Video - 6: Introduction to parcel.mp4
+
+1. Dependency issue
+2. Global variable
+3. Creating server
+4. Transpiling issue (use Babel)
+5. ES6 module - Gulp, WebPack
+
+## Install Parcel as DevDependency
+```
+yarn add parcel-bundler -D
+```
+Parcel takes about 4 minutes to install over 2 mbps connection.
+
+# Video 7: Configuring parcel
+
+Install React and ReactDOM:
+```
+yarn add react react-dom
+
+```
