@@ -14,7 +14,8 @@ sudo create-react-app react-app
 npm start
 ```
 
-## React's core building block is "Component".
+**এই টা কোন ক্লাসের?????????**
+React's core building block is "Component".
 
 ## What is React Component?
 
