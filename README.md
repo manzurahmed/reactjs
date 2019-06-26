@@ -28,11 +28,26 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 ## Making Visual Studio Code Editor suitable for React
 
 ```
-"emmet.includeLanguages": {
-	"javascript": "javascriptreact"
-},
-"emmet.syntaxProfiles": {
-	"javascript": "jsx"
+{
+  "editor.wordWrap": "on",
+  "php.executablePath": "/opt/lampp/bin/php",
+  "php.validate.executablePath": "/opt/lampp/bin/php",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "prettier.jsxSingleQuote": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "prettier.useTabs": true,
+  "prettier.singleQuote": true
 }
 ```
 
@@ -46,7 +61,8 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 
 ## NPM Packages to install
 1. Install Yarn globally (npm i yarn -g)
-2. Install Prettier as DevDependency
+2. Install Prettier as DevDependency (yarn add prettier -D)
+3. ESLink (yarn add eslint -D)
 
 # Video - 6: Introduction to parcel.mp4
 
@@ -61,6 +77,31 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 yarn init
 ```
 
+This is my entries in the package.json file:
+```
+{
+	"name": "jobreadyreact",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "parcel index.html",
+		"format": "prettier --write \"src/**/*.{js,jsx}\"",
+		"lint": "eslint \"src/**/*.{js,jsx}\""
+	},
+	"devDependencies": {
+		"eslint": "^6.0.1",
+		"eslint-plugin-react": "^7.14.2",
+		"parcel-bundler": "^1.12.3",
+		"prettier": "^1.18.2"
+	},
+	"dependencies": {
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
+}
+```
+
 ## Install Parcel as DevDependency
 ```
 yarn add parcel-bundler -D
@@ -73,4 +114,41 @@ Install React and ReactDOM:
 ```
 yarn add react react-dom
 
+```
+
+# Video 9: Configuring ESLink with React
+
+```
+yarn eslint --init
+```
+
+A file, named, ".eslintrc.json" will be created. Find below the JSON entries of that file:
+
+```
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"plugins": ["react"],
+	"rules": {},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}
 ```
