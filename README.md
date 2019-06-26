@@ -24,7 +24,7 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 
 "React.createElement" returns object and responsible for HTML in the browser.
 
-## Making our Code Editor suitable for React
+## Making Visual Studio Code Editor suitable for React
 
 ```
 "emmet.includeLanguages": {
