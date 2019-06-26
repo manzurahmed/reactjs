@@ -36,14 +36,17 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 }
 ```
 
-## Packages to install
+## VSCode Packages to install
 
 1. Babel ES6/ES7
 2. Bracket Pair Colorizer - CoenraadS
 3. Path Intellisense - Christian Kohler
 4. Prettier - Code formatter - Esben Petersen
 5. React-Native/React/Redux snippets for es6/es7 - EQuimper
-6. Yarn install globally (npm i yarn -g)
+
+## NPM Packages to install
+1. Install Yarn globally (npm i yarn -g)
+2. Install Prettier as DevDependency
 
 # Video - 6: Introduction to parcel.mp4
 
