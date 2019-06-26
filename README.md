@@ -43,6 +43,7 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 3. Path Intellisense - Christian Kohler
 4. Prettier - Code formatter - Esben Petersen
 5. React-Native/React/Redux snippets for es6/es7 - EQuimper
+6. Yarn install globally (npm i yarn -g)
 
 # Video - 6: Introduction to parcel.mp4
 
@@ -51,6 +52,11 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 3. Creating server
 4. Transpiling issue (use Babel)
 5. ES6 module - Gulp, WebPack
+
+**Create package.json**
+```
+yarn init
+```
 
 ## Install Parcel as DevDependency
 ```
