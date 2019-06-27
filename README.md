@@ -58,6 +58,7 @@ Components refer to "reusable pieces of code" ultimately responsible for "return
 3. Path Intellisense - Christian Kohler
 4. Prettier - Code formatter - Esben Petersen
 5. React-Native/React/Redux snippets for es6/es7 - EQuimper
+6. EsLink - Dirk Baeumer
 
 ## NPM Packages to install
 1. Install Yarn globally (npm i yarn -g)
@@ -152,3 +153,14 @@ A file, named, ".eslintrc.json" will be created. Find below the JSON entries of 
 	}
 }
 ```
+
+# Video 10: Configuring ESLint with React (Part 2)
+
+VSCode এ জাভাস্ক্রিপ্টের ভুল ত্রুটি দেখানোর জন্য EsLink (Dirk Baeumer) এক্সটেনশন ইন্সটল করা হয়েছে। এই এক্সটেনশনকে কমপ্লিমেন্ট করার জন্য eslint-plugin-jsx-a11y, eslint-plugin-import, eslint-config-prettier প্লাগিন ইন্সটল করা হয়। এগুলো কোডের এক্সেসিবিলিটি চেক করে।
+
+```
+yarn add eslint-plugin-import -D
+yarn add eslint-plugin-jsx-a11y -D
+yarn add eslint-config-prettier -D
+```
+
