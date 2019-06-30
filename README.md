@@ -109,6 +109,13 @@ yarn add parcel-bundler -D
 ```
 Parcel takes about 4 minutes to install over 2 mbps connection.
 
+**Parcel Watch**
+
+Run the following command to Parcel take control of all assets, transpile everything and stores ultimate files in "public" folder.
+```
+yarn dev --open
+```
+
 # Video 7: Configuring parcel
 
 Install React and ReactDOM:
