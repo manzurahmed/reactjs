@@ -29,3 +29,31 @@ function subtract(num1, num2) {
 
 export { add as default, subtract as Test };
 ```
+
+## 3. State
+
+In the lifecycle of an application, if a piece of data changes **dynamically**, can be identified as **State**. A State is not limited to ReactJS. Every application in any platform has State.
+
+## 4. How to write React state?
+```
+class PlayGround extends Component
+{
+	constructor( props )
+	{
+		super(props);
+		
+		this.state = {
+			player1Score: 0,
+			player2Score: 0,
+			winningScore: 7,
+			// so on
+		}
+	}
+}
+```
+
+1. To use "State", I must switch to **Class-based Component** instead of "Function-based Component".
+2. In case of "Stateless Component", I can omit Constructor function.
+3. In recent JS updates, I can use State in Function Component.
+
+## 
