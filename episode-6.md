@@ -14,7 +14,7 @@ export { add as default, subtract };
 ```
 export { add as default, subtract as Test };
 ```
-এখানে, subtract ফাংশনকে Test নামে এক্সপোর্ট করা হয়েছে।
+এখানে, subtract ফাংশনকে Test নামে named export এক্সপোর্ট করা হয়েছে।
 
 
 
