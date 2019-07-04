@@ -64,3 +64,28 @@ this.setState( { P1Score: 3 } );
 ```
 
 When a state changes, React changes the view automatically.
+
+## 8. Introduction to React event
+## 9. React Event in Practice
+
+In React, every JSX element has built-in attributes representing every king of browser event. They are **camel-Cased**, like, **onClick**, and take callback functions as event listeners.
+```
+<button onClick={this.handleClick}>
+   Click Me!
+</button>
+```
+
+This is the code that handles the button's click event:
+```
+handleClick() {
+	this.setState({
+		count: this.state.count + 1
+	});
+}
+```
+
+And, in the constructor of the class, I must bind this event handler to the **this** instance of the class, otherwise it won't find the **this**.
+
+```
+this.handleClick = this.handleClick.bind(this);
+```
