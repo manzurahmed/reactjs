@@ -56,4 +56,11 @@ class PlayGround extends Component
 2. In case of "Stateless Component", I can omit Constructor function.
 3. In recent JS updates, I can use State in Function Component.
 
-## 
+## 6. Introduction to State Changing
+
+**this.setState()** is the built-in React method of changing a component's state.
+```
+this.setState( { P1Score: 3 } );
+```
+
+When a state changes, React changes the view automatically.
