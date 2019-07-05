@@ -89,3 +89,20 @@ And, in the constructor of the class, I must bind this event handler to the **th
 ```
 this.handleClick = this.handleClick.bind(this);
 ```
+
+## 10. More on setState
+
+**setState** is an asynchronous function. It can receive a callback function. Using callback while setting State ensured that it will execute its inner hapennings when where are multiple states that being setting up.
+
+handleClick() {
+	this.setState(prevState => ({
+		count: prevState.count + 1,
+		counting: true
+	}));
+	this.setState(prevState => ({
+		count: prevState.count + 1,
+	}));
+	this.setState(prevState => ({
+		count: prevState.count + 1,
+	}));
+}
