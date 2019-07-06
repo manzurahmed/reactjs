@@ -107,3 +107,37 @@ handleClick() {
 	}));
 }
 ```
+
+## 13. state and props
+
+- state and props are both plain object.
+- props is not mutable, but, state is mutable.
+- state stores changing component data.
+- props stores component configuration data.
+
+## 14. Alternative Configuration
+
+রিয়াক্টজেএস কম্পোনেন্টের মধ্যে ইচ্চ্যামত ফাংশন লিখা যায় না, প্রপ ও স্টেটকে সরাসরি মিউটেট করা যায় না। তবে, babel এর কিছু এক্সপেরিমেন্টাল কিছু ফিচার ইন্সটল করে ব্যবহার করা যায়। এই কোর্সে Parcel ব্যবহার করা হয়েছে, যার সাহায্যে ব্যাবেলকে প্রিকনফিগার করা করা আছে। আল্টারনেট কনফিগারেশন ব্যবহার করা জন্য কিছু প্যাকেজ ইন্সটল করে সেগুলোকে ব্যাবেল এর এনভার্নমেন্টের সাথে রিকনফিগার করতে হবে। নতুন যে প্যাকেজগুলো ইন্সটল করতে হবে সেগুলো হলঃ
+
+```
+yarn add @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-object-rest-spread @babel/plugin-proposal-class-properties babel-eslint -D
+```
+
+এছাড়া, eslint এর পারসার হিসাবে babel-eslint কে আইডেন্টিফাই করে দিতে। এ জন্য **.eslintrc.json** ফাইলের একেবারে প্রথমে নিচের লাইনটি যুক্ত করে দিতে হবে।
+
+```
+"parser": "babel-eslint",
+```
+
+এবার প্রজেক্টের রুট এ .babelrc নামে একটি ফাইল তৈরী করে তার মধ্যে নীচের লাইনগুলো লিখতে হবেঃ
+```
+{
+	"presets": ["@babel/preset-env", "@babel/preset-react"],
+	"plugins": [
+		["@babel/plugin-proposal-class-properties", {}, "class properties"],
+		["@babel/plugin-proposal-object-rest-spread", {}, "class properties"]
+	]
+}
+```
+
+কাজ শেষ। এবার টার্মিনাল থেকে আবার yarn dev --open লিখে এন্টার দিলে সব কনফিগারেশন যদি ঠিক থাকে তবে পারসেল চালু হবে ও এটা ওয়াচ মুডে যাবে এবং আমাদের প্রজেক্টের আউটপুট ব্রাউজারে দেখা যাবে।
