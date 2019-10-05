@@ -1,3 +1,3 @@
 # Resources
 
-- ![Materialize CSS](https://materializecss.com/)
+- Materialize CSS (https://materializecss.com/)
