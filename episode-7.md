@@ -49,6 +49,8 @@ Getting Start পেজ থেকে সিএসএস এর CDN লিংক�
 
 ## 6. Working with Contact
 
+এই পর্বে Contact কম্পোনেন্ট নিয়ে কাজ করা হয়েছে।
+
 ## 7. Working with Search input
 
 ## 8. Generating contact dynamically
