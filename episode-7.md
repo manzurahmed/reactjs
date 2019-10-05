@@ -45,6 +45,8 @@ Getting Start পেজ থেকে সিএসএস এর CDN লিংক�
 
 ## 5. Working with contact form
 
+এই ভিডিওতে Contact Form টির মার্ক আপ লেখা হয়েছে।
+
 ## 6. Working with Contact
 
 ## 7. Working with Search input
