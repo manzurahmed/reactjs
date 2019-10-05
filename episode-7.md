@@ -23,3 +23,47 @@ State কে দুই ভাগে ভাগ করা যেতে পার�
 - Context
 
 Redux API কিন্তু React এর পার্ট নয়। একে ইনক্লুড করে অন্য ল্যাংগুয়েজে ব্যবহার করা যায়। কিন্তু, Context API কিন্তু ReactJS এর ন্যাটিভ পার্ট।
+
+2. App mockup and state planning
+![Component Division](https://github.com/manzurahmed/reactjs/blob/master/e7-component-division.jpg)
+
+চিত্রে দেখানো হয়েছে আমাদের এ্যাপের কোন কোন অংশকে আলাদা আলাদা কম্পোনেন্টে ভাগ করা যেতে পারে।
+
+3. Planning and placing component
+
+4. Working with header and navigation
+
+5. Working with contact form
+
+6. Working with Contact
+
+7. Working with Search input
+
+8. Generating contact dynamically
+
+9. Controlled component
+
+10. Working with radio button in Controlled component
+
+11. Working with Uncontrolled component
+
+12. Validating form input
+
+13. React developer tools
+
+14. Working with Syte
+
+15. Adding contact
+
+16. Deleting contact
+
+17. Toggling contact
+
+18. Editing contact
+
+19. Updating contact
+
+20. Lifecycle method
+
+21. Search contact
+
