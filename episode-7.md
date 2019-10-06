@@ -144,6 +144,17 @@ this.state = {
 
 ## 11. Working with Uncontrolled component
 
+ReactJS লাইব্রেরীতে Uncontrolled component তৈরীকে রিকমেন্ড করে না।
+
+ReactJS আসলে বিহাইন্ড-দ্য-সিনে Virtual DOM নিয়ে কাজ করে। আমাদের কনটাক্ট ফর্মের কন্ট্রোলগুলোকে রিয়্যাক্টজেএস নিয়ন্ত্রন করে। যে কারণে একে বলা হয়, controlled component। Controlled component এ ফর্মের ইনপুটটা DOM এর সাথে করা হয়, এখানে virtual DOM এর কোন ইন্টার-এ্যাকশন থাকে না।
+
+Controlled component এ ফর্মের প্রত্যেক কন্ট্রোলগুলোর জন্য ref={this.firstName} যুক্ত করা হয়েছে। এখানে {this.firstName} হল ঐ কন্ট্রোলের নাম, যে নামে ইনপুট ভ্যালুকে পাওয়া যাবে।
+
+In React an <input type="file" /> is always an uncontrolled component because its value can only be set by a user, and not programmatically.
+
+Uncontrolled component সম্পর্কে বিস্তারিত জানতে ReactJS এর অফিসিয়াল ডকুমেন্টেশন দেখুনঃ 
+https://reactjs.org/docs/uncontrolled-components.html
+
 ## 12. Validating form input
 
 ## 13. React developer tools
