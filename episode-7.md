@@ -103,6 +103,45 @@ handleChange(e) {
 
 ## 10. Working with radio button in Controlled component
 
+এই পর্বে ফর্মের রেডিও বাটন কিভাবে হ্যান্ডেল করতে হয়, তা দেখানো হয়েছে। ফর্মের স্টেটে রেডিও অপশনের যে কোন একটি ভ্যালুকে হার্ডকোড করে দেয়া হচ্ছে। অপশনগুলোতে সেই হার্ডকোডেড ভ্যালুর সাথে কম্পেয়ার করে সিলেক্টড অথবা ডিসিলেক্টেড স্টেটকে ডিফাইন করে সেট করা হচ্ছে।
+
+```js
+this.state = {
+			firstName: '',
+			lastName: '',
+			email: '',
+			profession: '',
+			contactType: 'professional'
+		};
+```
+
+রেডিও বাটনের checked ভ্যালুকে স্টেটের সাথে মিলিয়ে সেট করা হচ্ছেঃ
+
+```js
+<p>
+	<label>
+		<input
+			name='contactType'
+			type='radio'
+			value='personal'
+			onChange={this.handleChange}
+			checked={this.state.contactType === 'personal'}
+		/>
+		<span>Personal</span>
+	</label>
+	<label>
+		<input
+			name='contactType'
+			type='radio'
+			value='professional'
+			onChange={this.handleChange}
+			checked={this.state.contactType === 'professional'}
+		/>
+		<span>Professional</span>
+	</label>
+</p>
+```
+
 ## 11. Working with Uncontrolled component
 
 ## 12. Validating form input
