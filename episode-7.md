@@ -264,6 +264,8 @@ Contacts কম্পোনেন্টে contacts এ্যারেকে .ma
 
 ## 18. Editing contact
 
+এই ভিডিওতে কন্টাক্ট লিস্ট থেকে Edit বাটনে চাপ দিয়ে কিভাবে এডিট ফর্মে পপুলেট করতে হয়, সে হাতে-কলমে দেখানো হয়েছে।
+
 ## 19. Updating contact
 
 ## 20. Lifecycle method
