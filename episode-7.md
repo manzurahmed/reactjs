@@ -268,6 +268,11 @@ Contacts কম্পোনেন্টে contacts এ্যারেকে .ma
 
 ## 19. Updating contact
 
+Episode 7: Video 19. Updating contact
+
+এই ভিডিও লেসনের শুরুতেই ContactForm.js ফাইলকে রিনেম করে AddContact.js নামকরণ করা হয়। EditContact.js নামের নতুন একটি ফাইল তৈরী করা হয়।
+App.js ফাইলে ContactForm.js এর import এর রেফারেন্সকে ফিক্স করা হয়েছে।
+
 ## 20. Lifecycle method
 
 ## 21. Search contact
