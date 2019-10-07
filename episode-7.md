@@ -157,6 +157,10 @@ https://reactjs.org/docs/uncontrolled-components.html
 
 ## 12. Validating form input
 
+এই ভিডিওতে ফর্মের ইনপুট ভ্যালিডেশন ও ভিজুয়াল এ্যালার্ট কিভাবে ইমপ্লিমেন্ট করা যায়, সে সম্পর্কে আলোচনা করা হয়েছে।
+
+এছাড়াও, ইনপুট ফিল্ডের ভিজ্যুয়াল এ্যালার্ট নোটিফিকেশনের জন্য validator নামের একটি প্যাকেজ প্রজেক্টের সাথে ইন্সটল করা হয়েছে।
+
 ## 13. React developer tools
 
 ## 14. Working with Syte
