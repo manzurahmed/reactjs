@@ -169,9 +169,44 @@ https://reactjs.org/docs/uncontrolled-components.html
 
 React Developer Tools নামে Chrome ও Firefox এর ব্রাউজার এক্সটেনশন ব্যবহারে এই অসুবিধা দূর হয়।
 
-
-
 ## 14. Working with Syte
+
+রিয়্যাক্টজেএস এ্যাপের মধ্যে style ব্যবহারের বিষয়ে আলোচনা করা হয়েছে এই ভিডিওতে।
+
+এ্যাপের html tag গুলোতে বিভিন্নভাবে স্টাইল যুক্ত করা যায়।
+
+* এক্সটারনাল স্টাইল ফাইল লিখে index.html থেকে যুক্ত করে দেয়া
+* index.html এ Inline CSS লেখা যায়
+* html tag এর সাথে style এট্রিবিউট ব্যবহার করা।
+* **Top most component** এর মধ্যে **import** স্টেটমেন্ট ব্যবহার করা
+
+**Linking via index file**
+
+```css
+<link rel="stylesheet" href="style.css" />
+```
+
+**Inline CSS**
+
+```css
+<style>
+  nav .nav-wrapper {
+    padding: 0 10px;
+  }
+</style>
+```
+
+**Inline CSS with HTML Tag**
+
+```html
+<input type='text' onChange={this.handleChange}
+  value={lastname}
+  name='lastName'
+  style={{
+    backgroundColor: 'red'
+  }}
+```
+
 
 ## 15. Adding contact
 
