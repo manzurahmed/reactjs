@@ -1,5 +1,9 @@
 # Episode 7: Practical App Development
 
+![Contact App](https://github.com/manzurahmed/reactjs/blob/master/contact_app.jpg)
+
+এই পর্বের সবগুলো ক্লাস করার পরে কন্টাক্ট এ্যাপের যে প্রতিরূপ আমরা দেখতে পারব।
+
 ## Where to Put State
 
 State কে দুই ভাগে ভাগ করা যেতে পারে।
