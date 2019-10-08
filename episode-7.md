@@ -275,5 +275,29 @@ App.js ফাইলে ContactForm.js এর import এর রেফারেন
 
 ## 20. Lifecycle method
 
+একটি কন্টাক্টকে এডিট মুডে আনার পর ঐ অবস্থাতেই আরেকটি কন্টাক্টকে এডিট মুডে আনলে state এর মধ্যে ডাটা পপুলেট হচ্ছে ঠিকই, কিন্তু, এডিট ফর্মে ডাটা পপুলেট হচ্ছে।
+
+এই সমস্যা কেন হচ্ছে, তা বুঝবার জন্য **ReactJS Lifecycle method** এর ধরণ বুঝতে হবে।
+
+এই সমস্যা কাটানোর জন্য **componentWillReceiveProps** মেথড ব্যবহার করা হয়েছে।
+
+```js
+componentWillReceiveProps(nextProps) {
+	//console.log(nextProps);
+	if (nextProps.contact.id !== this.state.id) {
+		this.setState({
+			id: nextProps.contact.id,
+			firstName: nextProps.contact.firstName,
+			lastName: nextProps.contact.lastName,
+			email: nextProps.contact.email,
+			profession: nextProps.contact.profession,
+			contactType: nextProps.contact.contactType,
+			errors: {}
+		});
+	}
+}
+```
+
+
 ## 21. Search contact
 
