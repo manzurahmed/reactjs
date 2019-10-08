@@ -30,6 +30,25 @@ About পেজে কোন কিছু দেয়া হয়নি। About ল
 
 ## 3. Introduction to React-router-dom use
 
+কোর ReactJS Library এর মধ্যে Routing যুক্ত করা নাই। একে npm এর মাধ্যমে প্রজেক্টের সাথে যুক্ত করে নিতে হয়।
+
+জনপ্রিয় দু'টি রাউটিং প্যাকেজের নাম react-router-dom এবং reach-router.
+
+https://www.npmjs.com/package/react-router-dom 
+
+https://www.npmjs.com/package/@reach/router
+
+https://reacttraining.com/react-router/web/guides/quick-start
+https://reach.tech/router
+
+শুরুতেই react-router-dom ইন্সটল করে নিব। রাউটিং সম্পর্কে বিস্তারিত জানতে reacttraining.com এর ডকুমেন্টেশন পড়তে হবে।
+
+```
+yarn add react-router-dom
+```
+
+Routing এর ৩টি মেইন কম্পোনেন্ট হল, BrowserRouter,Router, এবং, Link
+
 ## 4. Where to use render in Routing
 
 ## 5. Continue to working with Routing
