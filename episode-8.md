@@ -186,4 +186,12 @@ App.js ফাইলে সবগুলোর <Route /> কে একটি <Swit
 
 ## 8. Working with Link continued
 
+এই ক্লাসে Contact.js ফাইলে কন্টাক্ট এডিট করার জন্য <Link> কম্পোনেন্ট কিভাবে লিখতে হবে, তা দেখলাম।
+
+```js
+<Link to={`/edit/${id}`} onClick={this.handleEdit(id)}>
+	<i className='material-icons right'>edit</i>
+</Link>
+```
+
 ## 9. Little Organization
