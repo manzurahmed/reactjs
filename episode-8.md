@@ -47,7 +47,10 @@ https://reach.tech/router
 yarn add react-router-dom
 ```
 
-Routing এর ৩টি মেইন কম্পোনেন্ট হল, BrowserRouter,Router, এবং, Link
+Routing এর ৩টি মেইন কম্পোনেন্ট হল,
+- BrowserRouter,
+- Router, এবং,
+- Link
 
 ## 4. Where to use render in Routing
 
