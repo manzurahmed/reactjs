@@ -87,6 +87,29 @@ import { Route } from 'react-router-dom';
 
 ## 4. Where to use render in Routing
 
+About পেজকে ব্রাউজারের ReactJS developer tool দিয়ে ইন্সপেক্ট করব। সেখানে About কম্পোনেন্টের উপরে ক্লিক করলে ডান দিকে উইন্ডোতে এর সাথে সংশ্লিষ্ট props গুলোর লিস্ট দেখাবে। এই props গুলো  ReactJS নিজে থেকেই আমাদের জন্য সরবরাহ করেছে। সেগুলো হলঃ
+
+- history
+- location
+- match
+
+এখানে match মধ্যে থাকা params অবজেক্টটি বেশি ব্যবহৃত হবে।
+
+**match params এর ব্যবহার**
+
+App.js এর render মেথডের মধ্যে <Route path='/about/:samim' component={About} /> অংশে /about এর পরে একটি ভ্যারিয়েবল পাস করা হয়েছে। এবার, ব্রাউজারে এ্যাড্রেস বারে যদি localhost:1234/about/me লিখে এন্টার দেই এবং রিয়াক্ট টুল দিয়ে match params এর মান পরীক্ষা করে দেখি, তবে দেখতে পাব সেখানো দেখা যাবেঃ
+```
+samim: "me"
+```
+
+এই ভ্যালুকে props এর মাধ্যমে About.js কম্পোনেন্ট থেকে এ্যাক্সেস করা যাবে। About.js ফাইল খুলে সেখানে render এর মধ্যে এভাবে লিখবঃ
+
+```js
+render() {
+	return <h3>About Us Page {this.props.match.params.samim}</h3>;
+}
+```
+
 ## 5. Continue to working with Routing
 
 ## 6. Loading NotFound Page
