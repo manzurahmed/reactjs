@@ -112,6 +112,41 @@ render() {
 
 ## 5. Continue to working with Routing
 
+Routing এর আরও কিছু খুঁটিনাটি বিষয় নিয়ে এই ক্লাসে আলোচনা করা হয়েছে। নীচের কোডটি খেয়াল করলে দেখা যাবে যে, এখানে Route এর মধ্যে Contacts কম্পোনেন্টকে পাস করা হয়েছে।
+
+```js
+<Route
+	path='/'
+	exact
+	render={() => (
+		<Contacts
+			contacts={this.state.contacts}
+			deleteContact={this.deleteContact}
+			editContact={this.editContact}
+		/>
+	)}
+/>
+```
+
+এখন এই Contacts কম্পোনেন্টকে ব্রাউজার থেকে ReactJS টুল দিয়ে ইন্সপেক্ট করলে দেখা যাবে, Contacts কম্পোনেন্টের ক্ষেত্রে Router এর কোন props পাওয়া যাবে না, যেটা About এর ক্ষেত্রে পাওয়া যাচ্ছিল। এর কারণ হল, Contacts কে একটি অবজেক্ট আকারে পাস করা হয়েছে।
+
+এর সাথে Router এর props পেতে হলে আর্গুমেন্ট আকারে props পাস করে দিতে হবে।
+
+```js
+<Route
+	path='/'
+	exact
+	render={props => (
+		<Contacts
+			contacts={this.state.contacts}
+			deleteContact={this.deleteContact}
+			editContact={this.editContact}
+			{...props}
+		/>
+	)}
+/>
+```
+
 ## 6. Loading NotFound Page
 
 ## 7. Working with Link and NavLink component
