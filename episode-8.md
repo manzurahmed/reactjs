@@ -169,6 +169,21 @@ App.js ফাইলে সবগুলোর <Route /> কে একটি <Swit
 
 ## 7. Working with Link and NavLink component
 
+এই ক্লাসে নেভিগেশন তৈরী করা দেখানো হয়েছে। নেভিগেশন তৈরীর জন্য Nav এবং NavLink কম্পোনেন্ট ২টা ব্যবহার করা হয়ে থাকে। তবে, NavLink এ একটা বাড়তি সুবিধা রয়েছে। এতে styling attributes জুড়ে দেয়া যায়। যেমনঃ activeClassName, activeStyle ইত্যাদি। 
+
+এ্যাপের নেভিগেশনের হোম বাটনের জন্য NavLink কোড হলঃ
+
+```js
+<NavLink
+	to='/'
+	exact
+	className='brand-logo'
+	activeClassName='active'
+>
+	Contacts App
+</NavLink>
+```
+
 ## 8. Working with Link continued
 
 ## 9. Little Organization
