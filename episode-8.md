@@ -52,6 +52,39 @@ Routing এর ৩টি মেইন কম্পোনেন্ট হল,
 - Router, এবং,
 - Link
 
+ReactJS এ রাউটার ব্যবহারের জন্য react-router-dom লাইব্রেরী থেকে BrowserRouter কম্পোনেন্টকে import করে নিতে হবে। BrowserRouter কম্পোনেন্টকে destructure করে আমরা মূলতঃ ৪টি কম্পোনেন্টকে ব্যবহার করবঃ
+
+- BrowserRouter
+- Route
+- Switch
+- Link
+
+```
+import { BrowserRouter } from 'react-router-dom';
+```
+
+**BrowserRouter এর ব্যবহার**
+
+```
+const router = (
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>
+);
+```
+
+আমাদের Contacts App এর App.js ফাইলে Route কে ব্যবহার করব। প্রথমে ইম্পোর্ট করে নিতে হবেঃ
+
+```
+import { Route } from 'react-router-dom';
+```
+
+এবার render() মেথডের মধ্যে Route কে ব্যবহার করার পালাঃ
+
+```
+<Route path='/about' exact component={About} />
+```
+
 ## 4. Where to use render in Routing
 
 ## 5. Continue to working with Routing
