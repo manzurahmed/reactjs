@@ -13,6 +13,43 @@ Redux লাইব্রেরী সব ধরণের ওয়েব প্র�
 
 ## 2. Introduction to Context API
 
+Context API ব্যবহার করার জন্য প্রজেক্টের src ফোল্ডারের মধ্যে contexts নামের একটি ফোল্ডার বানিয়ে তার মধ্যে Contact.context.js নামের একটি ফাইল তৈরী করে নিব। এই ফাইলের কন্টেন্ট নিচে দেয়া হলঃ
+
+```js
+import React, { Component } from 'react';
+export const ContactContext = React.createContext();
+
+export class ContactProvider extends Component {
+	render() {
+		return (
+			<ContactContext.Provider
+				value={{ firstName: 'samim', lastName: 'hasan' }}
+			>
+				{/* Must pass "Single Data" in value, single object, single array, single variable, etc. */}
+				{this.props.children}
+			</ContactContext.Provider>
+		);
+	}
+}
+```
+
+আমাদের বানানো এই কন্টেক্সট প্রোভাডারকে আমাদের top-most component এ ব্যবহার করব, আমাদের এ্যাপের ক্ষেত্রে index.js ফাইলে।
+
+```js
+const router = (
+	<BrowserRouter>
+		<ContactProvider>
+			<App />
+		</ContactProvider>
+	</BrowserRouter>
+);
+ReactDOM.render(router, document.getElementById('root'));
+```
+
+এবার, App.js ফাইলে context কে কনজিউম করা হবে, সেই ক্লাসে কনটেক্সট প্রোভাইডার ফাইলকে ইম্পোর্ট করে নিতে হবে। ContactContext কে **static** হিসাবে ডিক্লেয়ার করা হয়েছে। এই কনজিউমার ক্লাসে কন্টেক্সটকে **this.context** হিসাবে এ্যাক্সেস করা যায়।
+
+ReactJS এর অফিসিয়াল ওয়েবসাইটে Context API সম্পর্কে বিস্তারিত জানা যাবে এই ঠিকানায় https://reactjs.org/docs/context.html
+
 ## 3. Working with Context API continued
 
 ## 4. Using Context API in Contacts
