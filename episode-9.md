@@ -52,6 +52,14 @@ ReactJS এর অফিসিয়াল ওয়েবসাইটে Context API 
 
 ## 3. Working with Context API continued
 
+কন্টেক্সটকে বানানো হয়েছে আমাদের এ্যাপের স্টেটগুলোকে সেন্ট্রালি ম্যানেজ করা। সেই কাজটি এই ক্লাসে দেখানো হয়েছে।
+
+প্রথমে App.js ফাইল থেকে আমাদের contacts অবজেক্টকে তুলে নিয়ে এসে context ফাইলের মধ্যে জুড়ে দেয়া হয়েছে।
+
+App.js থেকে addContact, deleteContact, editContact - এই ইভেন্ট হ্যান্ডলারগুলোকে ContactContext class এর মধ্যে নিয়ে যাওয়া হয়েছে।
+
+**এই ক্লাশটি খুব গুরুত্বপূর্ণ। আবার দেখতে হবে।**
+
 ## 4. Using Context API in Contacts
 
 ## 5. Using Context API in Edit Update and Delete contact
