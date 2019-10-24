@@ -62,6 +62,8 @@ App.js থেকে addContact, deleteContact, editContact - এই ইভেন
 
 ## 4. Using Context API in Contacts
 
+এই ক্লাসে Contacts.js কম্পোনেন্টে পূর্বের props এর পরিবর্তে Context কে ব্যবহার করা হয়েছে।
+
 ## 5. Using Context API in Edit Update and Delete contact
 
 ## 6. Concept in Reducer
