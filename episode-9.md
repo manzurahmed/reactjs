@@ -70,6 +70,27 @@ App.js থেকে addContact, deleteContact, editContact - এই ইভেন
 
 ## 6. Concept in Reducer
 
+reducer টার্মটা এসেছে জাভাস্ক্রিপ্টের reduce থেকে। reducer একটি ফাংশন ছাড়া আর কিছুই না। এখানে existing state কে action এর উপর ভিত্তি করে নতুন একটা state কে রিটার্ন করা হয়।
+
+```js
+// It takes existing state, modify and return based on action. Ex: add, edit, update, delete
+// Returns another form of state
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+const reducer = (state, action) => {
+	if ('ADD_COUNT' === action.type) {
+		return {
+			...state,
+			count: state.count + action.payload
+		};
+	}
+};
+
+console.log(
+	reducer({ count: 0, counting: false }, { type: 'ADD_COUNT', payload: 1 })
+);
+
+```
+
 ## 7. Dispatching Add Contact
 
 ## 8. Dispatching EDIT UPDATE DELETE contact
