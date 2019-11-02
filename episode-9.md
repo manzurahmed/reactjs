@@ -93,6 +93,8 @@ console.log(
 
 ## 7. Dispatching Add Contact
 
+এই পর্বে ContactContext কম্পোনেন্টের মধ্যে reducer এবং dispatch ইমপ্লিমেন্ট করা হয়েছে। এর সাহায্যে Add Contact কম্পোনেন্ট থেকে নতুন কন্টাক্ট তৈরী করা পদ্ধতি আলোচনা করা হয়েছে। UI তে কোন পরিবর্তন হয় নাই, তবে, কাজের পদ্ধতিতে আমূল পরিবর্তন হয়েছে।
+
 ## 8. Dispatching EDIT UPDATE DELETE contact
 
 ## 9. Organizaing Our Project
