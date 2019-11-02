@@ -97,5 +97,7 @@ console.log(
 
 ## 8. Dispatching EDIT UPDATE DELETE contact
 
+এই ভিডিওতে Edit, Update, Delete ফাংশনগুলোকে আগের ক্লাসে প্রতিটা এ্যাকশনের জন্য তৈরী করা ইভেন্টভিত্তিক মেথডগুলোর পরিবর্তে display এবং reducer ভিত্তিক ফাংশন ব্যবহারের উপযোগী করা হয়েছে।
+
 ## 9. Organizaing Our Project
 
