@@ -66,6 +66,8 @@ App.js থেকে addContact, deleteContact, editContact - এই ইভেন
 
 ## 5. Using Context API in Edit Update and Delete contact
 
+এই ভিডিওতে কন্টাক্ট আপডেট ও ডিলিট করার পদ্ধতিতে Context API কে ইন্টিগ্রেট করা হয়েছে।
+
 ## 6. Concept in Reducer
 
 ## 7. Dispatching Add Contact
