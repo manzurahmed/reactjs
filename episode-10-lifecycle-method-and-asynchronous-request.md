@@ -10,7 +10,7 @@
 
 [ReactJS Lifecycle Diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-[!ReactJS Lifecycle Diagram](https://github.com/manzurahmed/reactjs/blob/master/react-life-cycle.png)
+![ReactJS Lifecycle Diagram](https://github.com/manzurahmed/reactjs/blob/master/react-life-cycle.png)
 
 ## 1. Introduction to Lifecycle Method
 
