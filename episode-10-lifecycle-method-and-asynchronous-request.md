@@ -35,6 +35,14 @@ ReactJS এর লাইফসাইকেলে ৩টি পর্যায় �
 
 ## 3. Lifecycle Method in Updating
 
+"Updating" stage e নিচের সিরিয়ালে ফাংশনগুলো এক্সিকিউট হয়।
+
+static getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+
 ## 4. Lifecycle Method in Unmounting
 
 ## 5. More Lifecycle Method
