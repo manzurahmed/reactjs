@@ -12,6 +12,21 @@
 
 ## 1. Introduction to Lifecycle Method
 
+ReactJS এর লাইফসাইকেলে ৩টি পর্যায় রয়েছে।
+
+- Mounting
+- Updating
+- Unmounting
+
+**Mounting**
+
+যখন কোন রিয়াক্ট কম্পোনেন্ট লোড হয়, তখন এই মাউন্টিং স্টেজ শুরু হয়। এই স্টেজে ৪টি মেথড কল হয়।
+
+- constructor
+- static getDerivedStateFromProps()
+- render()
+- componentDidMount()
+
 ## 2. Lifecycle Method in Mounting
 
 ## 3. Lifecycle Method in Updating
