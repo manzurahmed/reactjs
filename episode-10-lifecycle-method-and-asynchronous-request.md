@@ -45,6 +45,8 @@ componentDidUpdate()
 
 ## 4. Lifecycle Method in Unmounting
 
+এই ক্লাসে Lifecycle স্টেজের Unmount নিয়ে আলোচনা করা হয়েছে। এতে, একটি ২/৩ লাইনের টাইমার টিকার বানানো হয়েছে। টিকার চালু থাকা অবস্থায় অন্য কোন কম্পোনেন্টে নেভিগেট করে চলে গেলেও টাইমারটা ব্যাকগ্রাউন্ডে চালু থাকে যা একটা Error message জেনারেট করে। componentWillUnmount ফাংশনের মধ্যে clearInterval ফাংশন ব্যবহার করে টাইমারের হ্যান্ডেলকে (this.timerId) Unmount করা হয়েছে।
+
 ## 5. More Lifecycle Method
 
 ## 6. Working with JSON-Server
