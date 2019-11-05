@@ -49,6 +49,14 @@ componentDidUpdate()
 
 ## 5. More Lifecycle Method
 
+এই ক্লাসে কম্পোনেন্টের লাইফসাইকেলের আরও কিছু বিষয় ডিটেইল্ড আলোচনা করা হয়েছে। contact.js এ Update স্টেজে এসে দেখা গেল যে, DOM দুইবার updae হচ্ছিল। কারণ, প্রথম বার props রিয়াক্টজেএস কম্পেয়ার করে দেখে না যে, props যেটা হাতে পেয়েছে সেটা কি আদৌ আগে একবার রেন্ডার করা হয়েছিল কিনা। props এর মানের তুলনামূলক পরীক্ষা না করার ফলে একই props কে একাধিক বার রেন্ডার করা হচ্ছিল, যেটা আসলে এ্যাপের পারফরমেন্সে নেগেটিভ ইম্প্যাক্ট ফেলে।
+
+এই কারণ, React এর নেমড কম্পোনেন্ট "Component" এর পরিবর্তে "PureComponent" ব্যবহার করা হয়েছে (ভিডিওর ১১ঃ৫২ মিনিট টাইমলাইন)।
+
+PureComponent সম্পর্কে বিস্তারিত জানতে [অফিশিয়াল ডকুমেন্টেশন](https://reactjs.org/docs/react-api.html#reactpurecomponent) দেখুন।
+
+React.PureComponent is similar to React.Component. The difference between them is that React.Component doesn’t implement shouldComponentUpdate(), but React.PureComponent implements it with a shallow prop and state comparison. 
+
 ## 6. Working with JSON-Server
 
 ## 7. Getting Contacts from API
