@@ -59,6 +59,52 @@ React.PureComponent is similar to React.Component. The difference between them i
 
 ## 6. Working with JSON-Server
 
+আমাদের এই কোর্সে এ পর্যন্ত আমরা Contact.context.js ফাইলে হার্ডকোডেদ এ্যাড্রেস রেখেছিলাম। এই ক্লাসে JSON-server ইন্সটল করা হয়। এই সার্ভারে এ্যাপের এ্যাড্রেসগুলো রাখা হবে। এর অফিশিয়াল git repo এই এ্যাড্রেসে পাওয়া যাবে। https://github.com/typicode/json-server
+
+এ্যাপের রুট ফোল্ডারে **server** নামে একটি ফোল্ডার তৈরী করে সেই ফোল্ডারের মধ্যে নেভিগেট করে যেতে হবে। এর মধ্যে একটি ফাঁকা package.json ফাইল তৈরী করব।
+
+```
+mkdir server
+cd server
+yarn init -y
+```
+
+এবার লোকাল প্রজেক্টের জন্য json-server কে developer dependency হিসাবে ইন্সটল করব। কারণ, প্রোডাকশনে json-server কে ব্যবহার করা হয় না।
+
+```
+yarn add json-server
+```
+
+json-server এর ডকুমন্টেশন অনুযায়ী এর ফোল্ডারের মধ্যে **db.json** নামে একটি ফাইল তৈরী করব। এর মধ্যে টেস্ট ডাটা হিসাবে কিছু রেডিমেড ডাটা অফিশিয়াল ওয়েবসাইট থেকে পেস্ট করা হয়েছে।
+
+```js
+{
+	"posts": [
+		{ "id": 1, "title": "json-server", "author": "typicode" },
+		{ "id": 1, "title": "xampp", "author": "typicode" }
+	],
+	"comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+	"profile": {
+		"name": "typicode",
+		"email": "samimfazlu@gmail.com"
+	}
+}
+```
+
+এই json-server কে টার্মিনাল থেকে রান করানোর জন্য package.json ফাইলে script নামে নতুন একটি এন্ট্রি নিচের মত করে লেখা হয়েছেঃ
+
+```js
+"scripts": {
+		"dev:server": "json-server --watch db.json"
+	},
+```
+
+এবার টার্মিনাল থেকে "yarn dev:server" লিখে এন্টার চাপ দিলে json-server ব্যাকগ্রাউন্ডে চালু হবে।
+
+**একটা কথা মনে রাখতে হবে।** json-server কে প্রজেক্টের রুটের server ফোল্ডারে ইন্সটল করা হয়েছে। এই সার্ভারকে চালু করতে হলে **server** ফোল্ডারের মধ্যে গিয়ে কমান্ড ইস্যু করতে হবে।
+
+
+
 ## 7. Getting Contacts from API
 
 ## 8. Adding Contact
